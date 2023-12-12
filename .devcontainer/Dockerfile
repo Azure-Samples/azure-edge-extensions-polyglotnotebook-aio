@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/universal:2-linux
 
+# Create a symbolic link
+RUN ln -sf /usr/share/dotnet/dotnet /usr/local/dotnet/current
+
 # Install mosquitto client
 RUN apt-get update && apt-get install mosquitto-clients -y
 

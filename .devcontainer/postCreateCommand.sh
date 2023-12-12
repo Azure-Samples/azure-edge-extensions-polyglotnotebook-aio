@@ -6,12 +6,6 @@ set -o pipefail
 
 echo "Starting Post Create Command"
 
-# Install Autin
-wget -q https://raw.githubusercontent.com/ellie/atuin/main/install.sh -O - | /bin/bash && \
-curl https://raw.githubusercontent.com/rcaloras/bash-preexec/master/bash-preexec.sh -o ~/.bash-preexec.sh && \
-echo '[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh' >> ~/.bashrc && \
-echo 'eval "$(atuin init bash)"' >> ~/.bashrc
-
 # This env var is important to allow k3s to support shared mounts, required for CSI driver
 # Temporary fix until made default https://github.com/k3d-io/k3d/pull/1268#issuecomment-1745466499
 export K3D_FIX_MOUNTS=1

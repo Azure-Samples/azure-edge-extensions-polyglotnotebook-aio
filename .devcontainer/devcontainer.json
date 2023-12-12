@@ -13,12 +13,10 @@
     "storage": "32gb"
   },
   "features": {
-    "ghcr.io/devcontainers/features/azure-cli:1": {
-      "extensions": "connectedk8s,k8s-extension,azure-iot-ops"},
+    "ghcr.io/devcontainers/features/azure-cli:1": {},
     "ghcr.io/rio/features/k3d:1": {},
-    "ghcr.io/devcontainers/features/dotnet:2": {
-      "version": "8.0.100"
-    }
+    "ghcr.io/devcontainers/features/dotnet:2": {},
+    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {}
   },
   "secrets": {
     "SUBSCRIPTION_ID": {
@@ -29,7 +27,7 @@
     },
     "LOCATION": {
       "description": "Region to use, must be one of eastus, eastus2, westus, westus2, westus3, westeurope, or northeurope.",
-      "documentationUrl": "https://learn.microsoft.com/azure/iot-operations/deploy/howto-prepare-cluster"
+      "documentationUrl": "https://learn.microsoft.com/azure/iot-operations/deploy-iot-ops/howto-prepare-cluster"
     }
   },
   "containerEnv": {
@@ -38,7 +36,7 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postCreateCommand": "bash ./.devcontainer/postCreateCommand.sh",
+  "postCreateCommand": "postCreateCommand.sh",
   "customizations": {
     "vscode": {
       "extensions": [

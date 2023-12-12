@@ -1,6 +1,6 @@
 # Azure IoT Operations through Polyglot Notebooks
 
-This repository contains a set of Polyglot Notebooks that demonstrate how to use Azure IoT Operations using Codespaces.
+This repository contains a set of [Polyglot Notebooks](./notebooks/) that demonstrate how to use Azure IoT Operations using Codespaces.
 
 ## What is Azure IoT Operations?
 
@@ -35,13 +35,31 @@ This project framework provides the following features:
 
 ### Prerequisites
 
-- Azure Subscription
-- Codespaces
+* An Azure subscription. If you don't have an Azure subscription, [create one for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
+
+* A [GitHub](https://github.com) account.
 
 ### Quickstart
 
-1. Create codespace from [https://github.com/Azure-Samples/azure-edge-extensions-polyglotnotebook-aio]
-1. git checkout -b <mybranch>
+Use GitHub Codespaces to try Azure IoT Operations on a Kubernetes cluster without installing anything on your local machine. Use the **explore-iot-operations** codespace that is preconfigured with:
+
+- [K3s](https://k3s.io/) running in [K3d](https://k3d.io/) for a lightweight Kubernetes cluster
+- [Azure CLI](/cli/azure/install-azure-cli)
+- [Kubectl](https://kubernetes.io/docs/tasks/tools/) for managing Kubernetes resources
+- Other useful tools like [Helm](https://helm.sh/) and [k9s](https://k9scli.io/)
+
+> [!IMPORTANT]
+> Codespaces are easy to set up quickly and tear down later, but they're not suitable for performance evaluation or scale testing. Use GitHub Codespaces for exploration only.
+
+To get started with your codespace:
+
+1. Create the codespace, entering your Azure details to store them as environment variables for the terminal.
+
+   [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/azure-edge-extensions-polyglotnotebook-aio?quickstart=1)
+
+1. Your codespace should open automatically. If not, open it from the **Codespaces** tab in GitHub.
+
+1. Once your codespace is opened, navigate to `notebooks/get-started` and open the [Quickstart Deploy notebook](./notebooks/get-started/quickstart-virtual-deploy.ipynb) to get started.
 
 ## Resources
 
