@@ -59,7 +59,8 @@ To get started with your codespace:
 
 1. Your codespace should open automatically. If not, open it from the **Codespaces** tab in GitHub.
 
-1. Once your codespace is opened, navigate to `notebooks/get-started` and open the [Quickstart Deploy notebook](./notebooks/get-started/quickstart-virtual-deploy.ipynb) to get started.
+## Next Steps
+1. Go to the [Quickstart Deploy notebook](./notebooks/get-started/quickstart-virtual-deploy.ipynb) to get started.
 
 ## Resources
 
