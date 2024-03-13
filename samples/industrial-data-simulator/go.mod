@@ -1,7 +1,5 @@
 module github.com/explore-iot-ops/samples/industrial-data-simulator
 
-go 1.21.3
-
 require (
 	github.com/eclipse/paho.golang v0.11.0
 	github.com/eclipse/paho.mqtt.golang v1.4.2
@@ -13,7 +11,7 @@ require (
 	github.com/prometheus/client_golang v1.14.0
 	github.com/rs/zerolog v1.31.0
 	github.com/stretchr/testify v1.8.4
-	google.golang.org/protobuf v1.31.0
+	google.golang.org/protobuf v1.33.0
 	gopkg.in/yaml.v3 v3.0.1
 )
 
