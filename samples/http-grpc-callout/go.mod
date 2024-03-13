@@ -1,7 +1,5 @@
 module github.com/explore-iot-ops/samples/http-grpc-callout
 
-go 1.21.3
-
 replace (
 	github.com/explore-iot-ops/lib/env => ../../lib/env
 	github.com/explore-iot-ops/lib/logger => ../../lib/logger
@@ -43,5 +41,5 @@ require (
 	golang.org/x/sys v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230822172742-b8732ec3820d // indirect
-	google.golang.org/protobuf v1.31.0 // indirect
+	google.golang.org/protobuf v1.33.0 // indirect
 )
